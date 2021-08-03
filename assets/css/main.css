@@ -1,0 +1,388 @@
+@charset "UTF-8";
+/* ACLARACION DE "EXTENDER"
+El "extender" que es 
+
+%mensaje-share {
+    color: $white;
+    font-family: $open-sans;
+ } 
+^Que se tendria que poner en esta misma hoja, y para funcionar más abajo se llama con @extend "y nombre de la extencion"*/
+/* Base styles*/
+/*base typography*/
+html,
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Reset */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navigation {
+  display: flex;
+  padding: 1rem 1rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #6C6E70;
+}
+.navigation__input {
+  border-radius: 10px;
+  padding-left: 1rem;
+}
+@media (max-width: 576px) {
+  .navigation__input {
+    width: 4rem;
+    padding-left: 0.2rem;
+  }
+}
+.navigation__logo {
+  text-transform: uppercase;
+  font-size: 40px;
+  padding-left: 1.9rem;
+}
+@media (max-width: 576px) {
+  .navigation__logo {
+    padding-left: 0;
+  }
+}
+.navigation__nav {
+  display: flex;
+  align-items: center;
+}
+.navigation__list {
+  display: flex;
+  align-items: center;
+}
+.navigation__link {
+  display: inline-block;
+  align-items: center;
+}
+
+a:link,
+a:visited a:active {
+  text-decoration: none;
+  margin: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+}
+a:link:hover,
+a:visited a:active:hover {
+  color: #E56353;
+}
+
+li {
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .us {
+    display: none;
+  }
+}
+/* Logo box menu nav list, item y a (hover &:hover
+
+@media (max-width 768px) {
+&__link-us {
+    display: none;
+}
+}
+
+
+*/
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 35px 30px;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+.col-11 {
+  grid-column: span 11;
+}
+
+.col-10 {
+  grid-column: span 10;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+@media (min-width: 576px) {
+  .col-sm--12 {
+    grid-column: span 12;
+  }
+
+  .col-sm-11 {
+    grid-column: span 11;
+  }
+
+  .col-sm-10 {
+    grid-column: span 10;
+  }
+
+  .col-sm-9 {
+    grid-column: span 9;
+  }
+
+  .col-sm-8 {
+    grid-column: span 8;
+  }
+
+  .col-sm-7 {
+    grid-column: span 7;
+  }
+
+  .col-sm-6 {
+    grid-column: span 6;
+  }
+
+  .col-sm-5 {
+    grid-column: span 5;
+  }
+
+  .col-sm-4 {
+    grid-column: span 4;
+  }
+
+  .col-sm-3 {
+    grid-column: span 3;
+  }
+
+  .col-sm-2 {
+    grid-column: span 2;
+  }
+
+  .col-sm-1 {
+    grid-column: span 1;
+  }
+}
+@media (min-width: 768px) {
+  .col-md--12 {
+    grid-column: span 12;
+  }
+
+  .col-md-11 {
+    grid-column: span 11;
+  }
+
+  .col-md-10 {
+    grid-column: span 10;
+  }
+
+  .col-md-9 {
+    grid-column: span 9;
+  }
+
+  .col-md-8 {
+    grid-column: span 8;
+  }
+
+  .col-md-7 {
+    grid-column: span 7;
+  }
+
+  .col-md-6 {
+    grid-column: span 6;
+  }
+
+  .col-md-5 {
+    grid-column: span 5;
+  }
+
+  .col-md-4 {
+    grid-column: span 4;
+  }
+
+  .col-md-3 {
+    grid-column: span 3;
+  }
+
+  .col-md-2 {
+    grid-column: span 2;
+  }
+
+  .col-md-1 {
+    grid-column: span 1;
+  }
+}
+@media (min-width: 991px) {
+  .col-lg-12 {
+    grid-column: span 12;
+  }
+
+  .col-lg-11 {
+    grid-column: span 11;
+  }
+
+  .col-lg-10 {
+    grid-column: span 10;
+  }
+
+  .col-lg-9 {
+    grid-column: span 9;
+  }
+
+  .col-lg-8 {
+    grid-column: span 8;
+  }
+
+  .col-lg-7 {
+    grid-column: span 7;
+  }
+
+  .col-lg-6 {
+    grid-column: span 6;
+  }
+
+  .col-lg-5 {
+    grid-column: span 5;
+  }
+
+  .col-lg-4 {
+    grid-column: span 4;
+  }
+
+  .col-lg-3 {
+    grid-column: span 3;
+  }
+
+  .col-lg-2 {
+    grid-column: span 2;
+  }
+
+  .col-lg-1 {
+    grid-column: span 1;
+  }
+}
+.hero__section {
+  padding: 2rem;
+}
+@media (max-width: 576px) {
+  .hero__section {
+    padding-left: 1.5rem;
+  }
+}
+
+.hero__img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 15.625rem;
+  width: 100%;
+}
+
+.footer {
+  padding-top: 3rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+}
+.footer__text {
+  padding: 3rem 0;
+}
+
+.form__newsletter {
+  background-color: #f2f4f5;
+  padding: 3rem 2rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.form__newsletter .button-item {
+  background-color: #E56353;
+  color: #FFF;
+  border: 1px #E56353;
+  padding: 0.2rem;
+  margin-left: 0;
+}
+.form__newsletter .button-item:hover {
+  background-color: #ecbcba;
+  color: #FFF;
+}
+@media (max-width: 576px) {
+  .form__newsletter {
+    padding: 3rem 0.8rem;
+    font-size: 0.875rem;
+  }
+}
+
+.aside {
+  margin-right: 4rem;
+  padding-right: 0.2rem;
+}
+.aside__header-us {
+  display: block;
+  margin-top: 5rem;
+  text-align: left;
+  padding-right: 3.5rem;
+  border-bottom: 1px solid #6C6E70;
+}
+.aside__highlighted {
+  border-top: 1px solid #6C6E70;
+}
+.aside__ul {
+  margin-left: 0;
+  padding: 0;
+  text-align: center;
+}
+.aside__item1 {
+  display: inline-block;
+  background-color: #4682b4;
+  padding: 0.3rem;
+  margin: 0.5rem;
+  color: #FFF;
+}
+@media (max-width: 768px) {
+  .aside {
+    display: none;
+  }
+}
+
+/* Components style */
+/* Buttons */
+
+/*# sourceMappingURL=main.css.map */

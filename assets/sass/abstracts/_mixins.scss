@@ -1,0 +1,30 @@
+// MIXIN EXAMPLE //
+//@mixin input-form {  
+    //height: 30px;
+    //padding-left: 5px;
+    //font-size: $small;
+    //color: $ols-silver;
+    //border-radius: 5px;
+    //border: 1px solid $gray;
+//}
+
+//----------------------------//
+
+// Transforma px en rem
+@mixin relative-converter($property, $unit, $target, $context) {
+    $result: ($target / $context);
+    #{$property}: #{$result + $unit};
+    }
+
+@mixin botones {
+background-color: $fuzzy-wuzzy;
+color: $white;
+border: 1px $fuzzy-wuzzy;
+padding: 0.2rem;
+margin-left: 0;
+
+&:hover {
+    background-color: $spanish-pink;
+    color: $white;
+}
+}

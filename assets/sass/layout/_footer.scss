@@ -1,0 +1,27 @@
+.footer {
+  padding-top: 3rem;
+  text-align: center;
+  font-family: $roboto;
+  font-size: $large;
+
+  &__text {
+    padding: 3rem 0;
+  }
+}
+
+//Form//
+.form__newsletter {
+  background-color: $gray;
+  padding: 3rem 2rem;
+  text-align: center;
+  font-family: $roboto;
+
+  .button-item {
+    @include botones;
+  }
+
+  @media (max-width: 576px) {
+    padding: 3rem 0.8rem;
+    font-size: $small;
+  }
+}

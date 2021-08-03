@@ -1,0 +1,70 @@
+.navigation {
+  display: flex;
+  padding: 1rem 1rem;
+  justify-content: space-between;
+  border-bottom: 1px solid $nickel;
+
+  &__input {
+    border-radius: 10px;
+    padding-left: 1rem;
+
+    @media (max-width: 576px) {
+      width: 4rem;
+      padding-left: 0.2rem;
+    }
+  }
+  &__logo {
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-left: 1.9rem;
+
+    @media (max-width: 576px) {
+      padding-left: 0;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    display: inline-block;
+    align-items: center;
+  }
+}
+
+a:link,
+a:visited a:active {
+  text-decoration: none;
+  margin: 1rem;
+  font-family: $roboto;
+  font-size: $large;
+  &:hover {
+    color: $fuzzy-wuzzy;
+  }
+}
+li {
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .us {
+    display: none;
+  }
+}
+
+/* Logo box menu nav list, item y a (hover &:hover
+
+@media (max-width 768px) {
+&__link-us {
+    display: none;
+}
+}
+
+
+*/

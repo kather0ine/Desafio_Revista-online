@@ -1,0 +1,34 @@
+.aside {
+  margin-right: 4rem;
+  padding-right: 0.2rem;
+
+  &__header-us {
+    display: block;
+    margin-top: 5rem;
+    text-align: left;
+    padding-right: 3.5rem;
+    border-bottom: 1px solid $nickel;
+  }
+
+  &__highlighted {
+    border-top: 1px solid $nickel;
+  }
+
+  &__ul {
+    margin-left: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  &__item1 {
+    display: inline-block;
+    background-color: $steel-blue;
+    padding: 0.3rem;
+    margin: 0.5rem;
+    color: $white;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
